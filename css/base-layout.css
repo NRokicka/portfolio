@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+}
+article {
+    padding: 3vw;
+}
+@media only screen and (max-with: 900px) {
+    header {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 1rem;
+    }
+}
+@media only screen and (min-with: 901px) {
+    .container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 1rem;
+    }
+     header {
+        position: fixed;
+    }
+}
