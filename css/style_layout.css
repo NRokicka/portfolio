@@ -24,6 +24,9 @@ article {
         grid-template-rows: auto;
         grid-row-gap: 1rem;
     }
+    
+
+
     }
  @media only screen and (min-width:901px){
         /* styles for browsers larger than 901px; */
@@ -45,4 +48,16 @@ article {
     article {
     grid-column-start: 2;
 }
+ nav ul {
+        flex-wrap: wrap;
+    }
+    nav li {
+        flex-basis: 100%;
+        
+    }
+    nav a {
+    padding: 10px 0;
+    
+}
+
     }
