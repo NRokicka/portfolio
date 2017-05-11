@@ -4,8 +4,15 @@
 article {
     padding: 3vw;
 }
-@media only screen and (max-with: 900px) {
-    header {
+.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 1rem;
+    }
+
+ @media only screen and (max-width:900px){
+   header {
         display: grid;
         justify-items: center;
         align-items: center;
@@ -17,9 +24,10 @@ article {
         grid-template-rows: auto;
         grid-row-gap: 1rem;
     }
-}
-@media only screen and (min-with: 901px) {
-    .container {
+    }
+ @media only screen and (min-width:901px){
+        /* styles for browsers larger than 901px; */
+        .container {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     }
@@ -27,9 +35,14 @@ article {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-row-gap: 1rem;
+        grid-gap: 1rem;
     }
-     header {
+    header {
         position: fixed;
+        width: 25vw;
+        height: 100vh;
     }
+    article {
+    grid-column-start: 2;
 }
+    }
