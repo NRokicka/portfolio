@@ -50,9 +50,12 @@ article {
 }
  nav ul {
         flex-wrap: wrap;
+        
     }
     nav li {
         flex-basis: 100%;
+       
+        
         
     }
     nav a {

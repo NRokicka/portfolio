@@ -45,5 +45,7 @@ nav ul {
 }
 nav li {
     flex: 1;
+    text-align-last: left;
+    padding: 1vw;
 }
  
